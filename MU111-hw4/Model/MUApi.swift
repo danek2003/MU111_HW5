@@ -32,6 +32,9 @@ class MUApi: NSObject {
         var session = NSURLSession.sharedSession()
         var task = session.dataTaskWithRequest(request, completionHandler: { (data, _ , error) -> Void in
        //  var strData = NSString(data: data, encoding: NSUTF8StringEncoding)
+         
+            
+            //парсим данные не в основном потоке
             var error: NSError?
             var json: AnyObject! = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableLeaves, error: &error)
            
@@ -51,13 +54,15 @@ class MUApi: NSObject {
                 }
                 
             }
-            
-            success(resultLectures)
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                success(resultLectures)
+
+            })
             
         
         })
         task.resume()
-        success([Lecture(),Lecture()])
+      //  success([Lecture(),Lecture()])
     
     }
     

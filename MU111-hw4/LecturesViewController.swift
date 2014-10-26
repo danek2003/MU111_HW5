@@ -29,7 +29,9 @@ class LecturesViewController: UITableViewController {
 
    
      override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
         return lectureList.count
+    
     }
     
      override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -37,6 +39,7 @@ class LecturesViewController: UITableViewController {
         var cell  = tableView.dequeueReusableCellWithIdentifier("lectureCell", forIndexPath: indexPath) as UITableViewCell
        
         var lecture = lectureList[indexPath.row]
+      
         cell.textLabel.text = lecture.name
         
         return cell

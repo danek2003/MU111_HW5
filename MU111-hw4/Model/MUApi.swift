@@ -32,12 +32,11 @@ class MUApi: NSObject {
         var session = NSURLSession.sharedSession()
         var task = session.dataTaskWithRequest(request, completionHandler: { (data, _ , error) -> Void in
        //  var strData = NSString(data: data, encoding: NSUTF8StringEncoding)
-         
-            
+        
             //парсим данные не в основном потоке
             var error: NSError?
             var json: AnyObject! = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableLeaves, error: &error)
-           
+            
             var resultLectures: [Lecture] = []
          
             if let lecturesArray = json as? NSArray{

@@ -29,7 +29,9 @@ class LoginViewController: UIViewController {
 
     @IBAction func Login(sender: UIButton) {
 
-        dismissViewControllerAnimated(true, completion: nil)
+       var loginsuccess = UIStoryboard(name: "Lectures", bundle: nil).instantiateInitialViewController() as UINavigationController
+        presentViewController(loginsuccess, animated: true, completion: nil)
+     //   dismissViewControllerAnimated(true, completion: nil)
         
     }
 

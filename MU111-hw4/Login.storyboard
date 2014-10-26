@@ -23,7 +23,7 @@
         <!--Восстановление пароля-->
         <scene sceneID="7jv-we-WNV">
             <objects>
-                <viewController id="DW9-ho-SRn" customClass="LoginViewController" customModule="MU111_hw3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="DW9-ho-SRn" customClass="LoginViewController" customModule="MU111_hw4" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="V8O-Of-Css"/>
                         <viewControllerLayoutGuide type="bottom" id="wOi-77-fae"/>
@@ -78,7 +78,7 @@
         <!--Авторизация-->
         <scene sceneID="99A-GT-xac">
             <objects>
-                <viewController id="JFb-OH-iJV" customClass="LoginViewController" customModule="MU111_hw3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JFb-OH-iJV" customClass="LoginViewController" customModule="MU111_hw4" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JJ2-Hh-fIe"/>
                         <viewControllerLayoutGuide type="bottom" id="PTQ-PB-oVg"/>

@@ -15,7 +15,15 @@ class LecturesViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
+        var hud = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+        hud.color = UIColor.grayColor()
+        hud.mode = MBProgressHUDModeIndeterminate
+        hud.labelText = "Loading";
+        
         MUApi.sharedInstance().getLectures{(lectures)->() in
+          
+            MBProgressHUD.hideAllHUDsForView(self.view, animated: true)
+            
             self.lectureList = lectures
             self.tableView.reloadData()
             
@@ -36,7 +44,7 @@ class LecturesViewController: UITableViewController {
     
      override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var cell  = tableView.dequeueReusableCellWithIdentifier("lectureCell", forIndexPath: indexPath) as UITableViewCell
+        var cell  = tableView.dequeueReusableCellWithIdentifier("lectureCell", forIndexPath: indexPath) as TestTableCell
        
         var lecture = lectureList[indexPath.row]
       
@@ -47,12 +55,17 @@ class LecturesViewController: UITableViewController {
     
     
     
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+    
+        if segue.identifier == "lectureDetails" {
+            let detailsViewController = segue.destinationViewController as LecturesDetailViewController
+            let indexPath = self.tableView.indexPathForCell(sender as TestTableCell)!
+            let lecture = lectureList[indexPath.row]
+            
+            detailsViewController.lecture = lecture
+            
+        }
     }
     
 

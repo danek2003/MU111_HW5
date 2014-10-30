@@ -9,5 +9,8 @@
 import UIKit
 
 class Lecture: NSObject {
-   var name = ""
+    var name = ""
+    var movieURL: String? = nil
+    var details = ""
+    
 }

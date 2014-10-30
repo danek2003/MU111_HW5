@@ -10,41 +10,97 @@
 		9572322D19FA201200B2FE38 /* LecturesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9572322C19FA201200B2FE38 /* LecturesDetailViewController.swift */; };
 		9572323619FA8D4500B2FE38 /* MUApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9572323419FA8D4500B2FE38 /* MUApi.swift */; };
 		957744CC19EECB1800E61FDC /* LecturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957744CB19EECB1800E61FDC /* LecturesViewController.swift */; };
+		959B729519FE282A00AF07AF /* TestTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 959B729419FE282A00AF07AF /* TestTableCell.m */; };
 		95A1BDF119FBD925008457C5 /* Lecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A1BDF019FBD925008457C5 /* Lecture.swift */; };
+		95C1E4121A0091010051AF95 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C1E4111A0091010051AF95 /* MBProgressHUD.m */; };
+		95C1E42D1A00E6EB0051AF95 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C1E42C1A00E6EB0051AF95 /* MediaPlayer.framework */; };
+		95C1E42F1A0111F60051AF95 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C1E42E1A0111F60051AF95 /* AVFoundation.framework */; };
+		95CBA1341A01E05200DF2097 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C1E41A1A00A9BF0051AF95 /* Alamofire.framework */; };
+		95CBA1351A01E05200DF2097 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 95C1E41A1A00A9BF0051AF95 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		95E0A13A19EEA9A5000E96A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E0A13919EEA9A5000E96A8 /* AppDelegate.swift */; };
 		95E0A13C19EEA9A5000E96A8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E0A13B19EEA9A5000E96A8 /* LoginViewController.swift */; };
 		95E0A13F19EEA9A5000E96A8 /* Lectures.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95E0A13D19EEA9A5000E96A8 /* Lectures.storyboard */; };
 		95E0A14119EEA9A5000E96A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95E0A14019EEA9A5000E96A8 /* Images.xcassets */; };
 		95E0A14419EEA9A5000E96A8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95E0A14219EEA9A5000E96A8 /* LaunchScreen.xib */; };
-		95E0A15019EEA9A6000E96A8 /* MU111_hw4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E0A14F19EEA9A6000E96A8 /* MU111_hw4Tests.swift */; };
+		95E0A15019EEA9A6000E96A8 /* MU111_hw5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E0A14F19EEA9A6000E96A8 /* MU111_hw5Tests.swift */; };
 		95E0A15C19EEAA6E000E96A8 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95E0A15B19EEAA6E000E96A8 /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		95C1E4191A00A9BF0051AF95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C1E4141A00A9BE0051AF95 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+		95C1E41B1A00A9BF0051AF95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C1E4141A00A9BE0051AF95 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = AlamofireTests;
+		};
+		95C1E4271A00C3F60051AF95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C1E4141A00A9BE0051AF95 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+		95CBA1361A01E05200DF2097 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C1E4141A00A9BE0051AF95 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
 		95E0A14A19EEA9A6000E96A8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 95E0A12C19EEA9A5000E96A8 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 95E0A13319EEA9A5000E96A8;
-			remoteInfo = "MU111-hw4";
+			remoteInfo = "MU111-hw5";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		95CBA1381A01E05300DF2097 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				95CBA1351A01E05200DF2097 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9572322C19FA201200B2FE38 /* LecturesDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LecturesDetailViewController.swift; sourceTree = "<group>"; };
 		9572323419FA8D4500B2FE38 /* MUApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MUApi.swift; path = Model/MUApi.swift; sourceTree = "<group>"; };
 		957744CB19EECB1800E61FDC /* LecturesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LecturesViewController.swift; sourceTree = "<group>"; };
+		959B728F19FE208000AF07AF /* MU111-hw5-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MU111-hw5-Bridging-Header.h"; sourceTree = "<group>"; };
+		959B729319FE282A00AF07AF /* TestTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableCell.h; sourceTree = "<group>"; };
+		959B729419FE282A00AF07AF /* TestTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableCell.m; sourceTree = "<group>"; };
 		95A1BDF019FBD925008457C5 /* Lecture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Lecture.swift; path = Model/Lecture.swift; sourceTree = "<group>"; };
-		95E0A13419EEA9A5000E96A8 /* MU111-hw4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MU111-hw4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C1E4101A0091010051AF95 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		95C1E4111A0091010051AF95 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		95C1E4141A00A9BE0051AF95 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../../../Downloads/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		95C1E42C1A00E6EB0051AF95 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		95C1E42E1A0111F60051AF95 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		95E0A13419EEA9A5000E96A8 /* MU111-hw5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MU111-hw5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E0A13819EEA9A5000E96A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95E0A13919EEA9A5000E96A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95E0A13B19EEA9A5000E96A8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		95E0A13E19EEA9A5000E96A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Lectures.storyboard; sourceTree = "<group>"; };
 		95E0A14019EEA9A5000E96A8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		95E0A14319EEA9A5000E96A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		95E0A14919EEA9A6000E96A8 /* MU111-hw4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MU111-hw4Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95E0A14919EEA9A6000E96A8 /* MU111-hw5Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MU111-hw5Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E0A14E19EEA9A6000E96A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		95E0A14F19EEA9A6000E96A8 /* MU111_hw4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MU111_hw4Tests.swift; sourceTree = "<group>"; };
+		95E0A14F19EEA9A6000E96A8 /* MU111_hw5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MU111_hw5Tests.swift; sourceTree = "<group>"; };
 		95E0A15B19EEAA6E000E96A8 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,6 +109,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95C1E42F1A0111F60051AF95 /* AVFoundation.framework in Frameworks */,
+				95CBA1341A01E05200DF2097 /* Alamofire.framework in Frameworks */,
+				95C1E42D1A00E6EB0051AF95 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,25 +134,59 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		959B728E19FE204100AF07AF /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				959B729319FE282A00AF07AF /* TestTableCell.h */,
+				959B729419FE282A00AF07AF /* TestTableCell.m */,
+				959B728F19FE208000AF07AF /* MU111-hw5-Bridging-Header.h */,
+			);
+			name = Test;
+			path = "MU111-hw5";
+			sourceTree = "<group>";
+		};
+		95C1E4131A00910A0051AF95 /* MBPpogressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				95C1E4101A0091010051AF95 /* MBProgressHUD.h */,
+				95C1E4111A0091010051AF95 /* MBProgressHUD.m */,
+			);
+			name = MBPpogressHUD;
+			sourceTree = "<group>";
+		};
+		95C1E4151A00A9BE0051AF95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95C1E41A1A00A9BF0051AF95 /* Alamofire.framework */,
+				95C1E41C1A00A9BF0051AF95 /* AlamofireTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		95E0A12B19EEA9A5000E96A8 = {
 			isa = PBXGroup;
 			children = (
-				95E0A13619EEA9A5000E96A8 /* MU111-hw4 */,
-				95E0A14C19EEA9A6000E96A8 /* MU111-hw4Tests */,
+				95C1E42E1A0111F60051AF95 /* AVFoundation.framework */,
+				95C1E42C1A00E6EB0051AF95 /* MediaPlayer.framework */,
+				95E0A13619EEA9A5000E96A8 /* MU111-hw5 */,
+				95E0A14C19EEA9A6000E96A8 /* MU111-hw5Tests */,
 				95E0A13519EEA9A5000E96A8 /* Products */,
+				959B728E19FE204100AF07AF /* Test */,
+				95C1E4131A00910A0051AF95 /* MBPpogressHUD */,
+				95C1E4141A00A9BE0051AF95 /* Alamofire.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
 		95E0A13519EEA9A5000E96A8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				95E0A13419EEA9A5000E96A8 /* MU111-hw4.app */,
-				95E0A14919EEA9A6000E96A8 /* MU111-hw4Tests.xctest */,
+				95E0A13419EEA9A5000E96A8 /* MU111-hw5.app */,
+				95E0A14919EEA9A6000E96A8 /* MU111-hw5Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		95E0A13619EEA9A5000E96A8 /* MU111-hw4 */ = {
+		95E0A13619EEA9A5000E96A8 /* MU111-hw5 */ = {
 			isa = PBXGroup;
 			children = (
 				9572322E19FA6E4800B2FE38 /* Model */,
@@ -105,7 +198,7 @@
 				95E0A14219EEA9A5000E96A8 /* LaunchScreen.xib */,
 				95E0A13719EEA9A5000E96A8 /* Supporting Files */,
 			);
-			path = "MU111-hw4";
+			path = "MU111-hw5";
 			sourceTree = "<group>";
 		};
 		95E0A13719EEA9A5000E96A8 /* Supporting Files */ = {
@@ -116,13 +209,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		95E0A14C19EEA9A6000E96A8 /* MU111-hw4Tests */ = {
+		95E0A14C19EEA9A6000E96A8 /* MU111-hw5Tests */ = {
 			isa = PBXGroup;
 			children = (
-				95E0A14F19EEA9A6000E96A8 /* MU111_hw4Tests.swift */,
+				95E0A14F19EEA9A6000E96A8 /* MU111_hw5Tests.swift */,
 				95E0A14D19EEA9A6000E96A8 /* Supporting Files */,
 			);
-			path = "MU111-hw4Tests";
+			path = "MU111-hw5Tests";
 			sourceTree = "<group>";
 		};
 		95E0A14D19EEA9A6000E96A8 /* Supporting Files */ = {
@@ -146,26 +239,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		95E0A13319EEA9A5000E96A8 /* MU111-hw4 */ = {
+		95E0A13319EEA9A5000E96A8 /* MU111-hw5 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95E0A15319EEA9A6000E96A8 /* Build configuration list for PBXNativeTarget "MU111-hw4" */;
+			buildConfigurationList = 95E0A15319EEA9A6000E96A8 /* Build configuration list for PBXNativeTarget "MU111-hw5" */;
 			buildPhases = (
 				95E0A13019EEA9A5000E96A8 /* Sources */,
 				95E0A13119EEA9A5000E96A8 /* Frameworks */,
 				95E0A13219EEA9A5000E96A8 /* Resources */,
+				95CBA1381A01E05300DF2097 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				95C1E4281A00C3F60051AF95 /* PBXTargetDependency */,
+				95CBA1371A01E05200DF2097 /* PBXTargetDependency */,
 			);
-			name = "MU111-hw4";
-			productName = "MU111-hw4";
-			productReference = 95E0A13419EEA9A5000E96A8 /* MU111-hw4.app */;
+			name = "MU111-hw5";
+			productName = "MU111-hw5";
+			productReference = 95E0A13419EEA9A5000E96A8 /* MU111-hw5.app */;
 			productType = "com.apple.product-type.application";
 		};
-		95E0A14819EEA9A6000E96A8 /* MU111-hw4Tests */ = {
+		95E0A14819EEA9A6000E96A8 /* MU111-hw5Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95E0A15619EEA9A6000E96A8 /* Build configuration list for PBXNativeTarget "MU111-hw4Tests" */;
+			buildConfigurationList = 95E0A15619EEA9A6000E96A8 /* Build configuration list for PBXNativeTarget "MU111-hw5Tests" */;
 			buildPhases = (
 				95E0A14519EEA9A6000E96A8 /* Sources */,
 				95E0A14619EEA9A6000E96A8 /* Frameworks */,
@@ -176,9 +272,9 @@
 			dependencies = (
 				95E0A14B19EEA9A6000E96A8 /* PBXTargetDependency */,
 			);
-			name = "MU111-hw4Tests";
-			productName = "MU111-hw4Tests";
-			productReference = 95E0A14919EEA9A6000E96A8 /* MU111-hw4Tests.xctest */;
+			name = "MU111-hw5Tests";
+			productName = "MU111-hw5Tests";
+			productReference = 95E0A14919EEA9A6000E96A8 /* MU111-hw5Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -199,7 +295,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 95E0A12F19EEA9A5000E96A8 /* Build configuration list for PBXProject "MU111-hw4" */;
+			buildConfigurationList = 95E0A12F19EEA9A5000E96A8 /* Build configuration list for PBXProject "MU111-hw5" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -210,13 +306,36 @@
 			mainGroup = 95E0A12B19EEA9A5000E96A8;
 			productRefGroup = 95E0A13519EEA9A5000E96A8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 95C1E4151A00A9BE0051AF95 /* Products */;
+					ProjectRef = 95C1E4141A00A9BE0051AF95 /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				95E0A13319EEA9A5000E96A8 /* MU111-hw4 */,
-				95E0A14819EEA9A6000E96A8 /* MU111-hw4Tests */,
+				95E0A13319EEA9A5000E96A8 /* MU111-hw5 */,
+				95E0A14819EEA9A6000E96A8 /* MU111-hw5Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		95C1E41A1A00A9BF0051AF95 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 95C1E4191A00A9BF0051AF95 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		95C1E41C1A00A9BF0051AF95 /* AlamofireTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AlamofireTests.xctest;
+			remoteRef = 95C1E41B1A00A9BF0051AF95 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		95E0A13219EEA9A5000E96A8 /* Resources */ = {
@@ -250,6 +369,8 @@
 				9572323619FA8D4500B2FE38 /* MUApi.swift in Sources */,
 				9572322D19FA201200B2FE38 /* LecturesDetailViewController.swift in Sources */,
 				95E0A13A19EEA9A5000E96A8 /* AppDelegate.swift in Sources */,
+				959B729519FE282A00AF07AF /* TestTableCell.m in Sources */,
+				95C1E4121A0091010051AF95 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,16 +378,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95E0A15019EEA9A6000E96A8 /* MU111_hw4Tests.swift in Sources */,
+				95E0A15019EEA9A6000E96A8 /* MU111_hw5Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		95C1E4281A00C3F60051AF95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			targetProxy = 95C1E4271A00C3F60051AF95 /* PBXContainerItemProxy */;
+		};
+		95CBA1371A01E05200DF2097 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			targetProxy = 95CBA1361A01E05200DF2097 /* PBXContainerItemProxy */;
+		};
 		95E0A14B19EEA9A6000E96A8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 95E0A13319EEA9A5000E96A8 /* MU111-hw4 */;
+			target = 95E0A13319EEA9A5000E96A8 /* MU111-hw5 */;
 			targetProxy = 95E0A14A19EEA9A6000E96A8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -372,10 +503,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "MU111-hw4/Info.plist";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "MU111-hw5/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "MU111-hw4";
+				PRODUCT_NAME = "MU111-hw5";
+				SWIFT_OBJC_BRIDGING_HEADER = "MU111-hw5/MU111-hw5-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -383,10 +519,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "MU111-hw4/Info.plist";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "MU111-hw5/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "MU111-hw4";
+				PRODUCT_NAME = "MU111-hw5";
+				SWIFT_OBJC_BRIDGING_HEADER = "MU111-hw5/MU111-hw5-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -394,6 +534,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -402,10 +543,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "MU111-hw4Tests/Info.plist";
+				INFOPLIST_FILE = "MU111-hw5Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "MU111-hw4Tests";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MU111-hw4.app/MU111-hw4";
+				PRODUCT_NAME = "MU111-hw5Tests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MU111-hw5.app/MU111-hw5";
 			};
 			name = Debug;
 		};
@@ -413,21 +554,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "MU111-hw4Tests/Info.plist";
+				INFOPLIST_FILE = "MU111-hw5Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "MU111-hw4Tests";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MU111-hw4.app/MU111-hw4";
+				PRODUCT_NAME = "MU111-hw5Tests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MU111-hw5.app/MU111-hw5";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		95E0A12F19EEA9A5000E96A8 /* Build configuration list for PBXProject "MU111-hw4" */ = {
+		95E0A12F19EEA9A5000E96A8 /* Build configuration list for PBXProject "MU111-hw5" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95E0A15119EEA9A6000E96A8 /* Debug */,
@@ -436,7 +578,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95E0A15319EEA9A6000E96A8 /* Build configuration list for PBXNativeTarget "MU111-hw4" */ = {
+		95E0A15319EEA9A6000E96A8 /* Build configuration list for PBXNativeTarget "MU111-hw5" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95E0A15419EEA9A6000E96A8 /* Debug */,
@@ -445,7 +587,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95E0A15619EEA9A6000E96A8 /* Build configuration list for PBXNativeTarget "MU111-hw4Tests" */ = {
+		95E0A15619EEA9A6000E96A8 /* Build configuration list for PBXNativeTarget "MU111-hw5Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95E0A15719EEA9A6000E96A8 /* Debug */,

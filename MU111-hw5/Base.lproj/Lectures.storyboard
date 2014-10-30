@@ -7,13 +7,18 @@
         <!--Лекции-->
         <scene sceneID="dAG-9g-a8l">
             <objects>
-                <tableViewController id="AqK-ne-V9I" customClass="LecturesViewController" customModule="MU111_hw4" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="AqK-ne-V9I" customClass="LecturesViewController" customModule="MU111_hw5" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="TKu-ek-BHc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="OCD-81-kqz">
+                            <rect key="frame" x="0.0" y="130" width="320" height="14"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="lectureCell" editingAccessoryType="disclosureIndicator" textLabel="cF9-vW-6qL" style="IBUITableViewCellStyleDefault" id="NcW-6m-TOq">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="lectureCell" editingAccessoryType="disclosureIndicator" textLabel="cF9-vW-6qL" style="IBUITableViewCellStyleDefault" id="NcW-6m-TOq" customClass="TestTableCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NcW-6m-TOq" id="EjZ-ok-esx">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -27,7 +32,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="IvH-sB-tj5" kind="push" id="MTb-Sw-DbB"/>
+                                    <segue destination="IvH-sB-tj5" kind="push" identifier="lectureDetails" id="MTb-Sw-DbB"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -42,12 +47,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lv1-vj-gSU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="222.40000000000001" y="168.50666666666666"/>
+            <point key="canvasLocation" x="222" y="168"/>
         </scene>
         <!--Lectures Detail View Controller-->
         <scene sceneID="D1T-2U-z3k">
             <objects>
-                <viewController id="IvH-sB-tj5" customClass="LecturesDetailViewController" customModule="MU111_hw4" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IvH-sB-tj5" customClass="LecturesDetailViewController" customModule="MU111_hw5" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2aB-in-w47"/>
                         <viewControllerLayoutGuide type="bottom" id="RrZ-gI-gy9"/>
@@ -55,13 +60,34 @@
                     <view key="view" contentMode="scaleToFill" id="aag-3s-Bof">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7RH-fe-1IS">
+                                <rect key="frame" x="110" y="131" width="100" height="30"/>
+                                <state key="normal" title="Играть Видео">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAction:" destination="IvH-sB-tj5" eventType="touchUpInside" id="Gne-gy-val"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WVH-Em-Jzt">
+                                <rect key="frame" x="30" y="187" width="260" height="373"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Eqr-Tb-Ko7"/>
+                    <connections>
+                        <outlet property="lectureDetails" destination="WVH-Em-Jzt" id="zf7-OF-MFI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6mI-HW-5iW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="665" y="168"/>
+            <point key="canvasLocation" x="717" y="168"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IxJ-fh-y4B">
